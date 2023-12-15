@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claim redeemable freeplay now">
+    <meta property="og:title" content="Ace Players">
+    <meta property="og:description" content="Claim Redeemable Freeplay Now">
+    <meta property="og:type" content="website">
+    <title>Game Room</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8eff1;
+            text-align: center;
+            padding-top: 100px;
+            color: #333;
+        }
+    
+        .container {
+            background-color: #fff;
+            width: 40%;
+            margin: auto;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    
+        h1 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+    
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 6px solid #3498db;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+            margin: auto;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        /* Additional styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+    <script>
+        let countdown;
+
+        function redirectToAcePlayersRoom() {
+            let seconds = 3;
+            countdown = setInterval(function() {
+                seconds--;
+                if (seconds < 0) {
+                    clearInterval(countdown);
+                    window.location.href = "https://m.me/124871910712549";
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="redirectToAcePlayersRoom()">
+    <div class="container">
+        <h1>Checking...</h1>
+        <div class="loader"></div>
+        <div class="message">Please wait, verifying you are not a robot.</div>
+    </div>
+</body>
+</html>
